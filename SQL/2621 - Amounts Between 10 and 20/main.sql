@@ -1,0 +1,1 @@
+select products.name from products join providers on products.id_providers = providers.id and products.amount between 10 and 20 where providers.name like 'P%';
