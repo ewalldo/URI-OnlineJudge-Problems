@@ -1,0 +1,1 @@
+(select concat('Podium: ', team) as name from league order by position limit 3) union all (select concat('Demoted: ', team) from league where position > (select count(position)-2 from league));
