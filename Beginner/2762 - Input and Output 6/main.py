@@ -1,0 +1,6 @@
+aux = input()
+name = str(aux)
+line = name.strip().split('.')
+x1 = int(line[1])
+x2 = int(line[0])
+print("%d.%d" % (x1, x2))
